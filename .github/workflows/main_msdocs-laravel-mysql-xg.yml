@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy PHP app to Azure Web App - msdocs-laravel-mysql-XG
+name: Build and deploy PHP app to Azure Web App - msdocs-laravel-mysql-xg
 
 on:
   push:
@@ -56,15 +56,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_672599B959ED4A26BC1F35B20A9CC425 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_7B516A8E06C1447FB61C488BF40367C7 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3AF63E1ACB4C4C2EB7C2B0E0F32EE7A9 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E6989F358C234F11AC6FBC51B06E4DD0 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_F68B6E7A20014619BC54B42B422F0E63 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_FCFDB3BD66EF416EB77FF6BF3939C247 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'msdocs-laravel-mysql-XG'
+          app-name: 'msdocs-laravel-mysql-xg'
           slot-name: 'Production'
           package: .
           
